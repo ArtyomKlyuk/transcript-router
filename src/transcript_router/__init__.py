@@ -1,4 +1,4 @@
-# <CANARY_HERE>
+# tr-canary-8fa156aa
 
 __all__ = ["__version__"]
 

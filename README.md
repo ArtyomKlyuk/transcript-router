@@ -90,4 +90,4 @@ tests/                 # pytest
 
 ## Контакт
 
-`<CONTACT_HERE>`
+Telegram: [@artyom_klyuk](https://t.me/artyom_klyuk)

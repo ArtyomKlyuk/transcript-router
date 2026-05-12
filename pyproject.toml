@@ -8,6 +8,7 @@ version = "0.1.0"
 description = "Demo pipeline routing voice transcriptions into an Obsidian vault via LLM classification."
 requires-python = ">=3.12"
 license = { text = "Proprietary" }
+authors = [{ name = "Artyom Klyukovskiy", email = "artyom010408@gmail.com" }]
 dependencies = [
     "anthropic>=0.40",
     "pydantic>=2.7",
