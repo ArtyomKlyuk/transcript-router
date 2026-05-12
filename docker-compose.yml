@@ -1,0 +1,9 @@
+services:
+  demo:
+    build: .
+    env_file:
+      - .env
+    environment:
+      VAULT_PATH: /app/vault
+    volumes:
+      - ./vault:/app/vault

@@ -1,0 +1,16 @@
+[Unit]
+Description=transcript-router demo worker
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=transcript-router
+WorkingDirectory=/opt/transcript-router
+EnvironmentFile=/opt/transcript-router/.env
+ExecStart=/opt/transcript-router/.venv/bin/python examples/run_demo.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
