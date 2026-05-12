@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import asyncio
 
 from transcript_router import pipeline

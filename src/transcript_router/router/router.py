@@ -37,9 +37,7 @@ class Router:
         path.write_text(_render(transcription, classification), encoding="utf-8")
         return path
 
-    def apply_client_routing_rules(
-        self, transcription: Transcription, category: Category
-    ) -> Path:
+    def apply_client_routing_rules(self, transcription: Transcription, category: Category) -> Path:
         raise NotImplementedError("client-specific routing rules configured per-engagement")
 
 
@@ -54,7 +52,7 @@ def _render(transcription: Transcription, classification: Classification) -> str
 
     body_parts = [f"# {classification.suggested_title}", "", transcription.text.strip()]
     if classification.key_points:
-        body_parts += ["", "## Key points", ""]
+        body_parts += ["", "## Ключевые моменты", ""]
         body_parts += [f"- {point}" for point in classification.key_points]
     body = "\n".join(body_parts)
 

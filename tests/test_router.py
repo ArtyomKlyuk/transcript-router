@@ -18,9 +18,7 @@ def test_write_places_file_into_category_folder(
     assert path.suffix == ".md"
 
 
-def test_filename_uses_slug_and_date(
-    vault: Path, sample_transcription: Transcription
-) -> None:
+def test_filename_uses_slug_and_date(vault: Path, sample_transcription: Transcription) -> None:
     classification = Classification(
         category=Category.meeting,
         confidence=0.9,
